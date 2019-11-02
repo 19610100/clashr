@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=clashr
-PKG_VERSION:=0.16.2
+PKG_VERSION:=0.16.3
 
 PKG_MAINTAINER:=frainzy1477
 
@@ -37,8 +37,9 @@ PKG_HASH:=skip
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
-	SECTION:=net
-	CATEGORY:=Network
+	SECTION:=luci
+	CATEGORY:=LuCI
+	SUBMENU:=2. Clash
 	TITLE:=clash is a cross-platform proxy software
 	DEPENDS:=
 	URL:=https://github.com/frainzy1477/clashrdev/releases
